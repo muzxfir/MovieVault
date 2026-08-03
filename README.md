@@ -1,43 +1,40 @@
 # MovieVault
 
-A responsive movie-discovery website built with React, Vite and optional TMDB API integration.
+GitHub Pages-ready React + Vite movie discovery website.
 
-## Run locally
+## Upload
+
+Upload every file and folder to the root of:
+
+`https://github.com/muzxfir/MovieVault`
+
+Do not forget the hidden `.github` folder.
+
+## Enable GitHub Pages
+
+1. Repository → Settings → Pages
+2. Source → GitHub Actions
+3. Repository → Actions → Deploy MovieVault → Run workflow
+
+Live URL:
+
+`https://muzxfir.github.io/MovieVault/`
+
+## Add TMDB API key
+
+Repository → Settings → Secrets and variables → Actions → New repository secret
+
+Name:
+
+`VITE_TMDB_API_KEY`
+
+Value: your TMDB API v3 key.
+
+Do not upload a real `.env` file to a public repository.
+
+## Local run
 
 ```bash
 npm install
 npm run dev
-```
-
-## Enable live TMDB movie data
-
-1. Create an account on TMDB.
-2. Get a TMDB API key.
-3. Copy `.env.example` to a new file named `.env`.
-4. Add your key:
-
-```env
-VITE_TMDB_API_KEY=your_tmdb_api_key_here
-```
-
-5. Restart the development server:
-
-```bash
-npm run dev
-```
-
-With a valid API key, MovieVault loads:
-
-- Trending movies
-- Top-rated movies
-- Now-playing releases
-- Live movie search
-- Posters and backdrop images
-
-Without an API key, the website runs in demo mode using built-in sample data.
-
-## Build
-
-```bash
-npm run build
 ```
